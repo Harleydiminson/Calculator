@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MyButton from './MyButton';
-import './Calculator.css'; // Создадим CSS файл для стилей
+import './Calculator.css'; 
 
 function Calculator() {
 
@@ -24,8 +24,8 @@ function Calculator() {
       const secondValue = input.split(operator)[1]
       const result = calculate(parseFloat(firstValue), parseFloat(secondValue), operator);
       setInput(parseFloat(result.toFixed(2)));
-      setFirstValue(null); // Сбрасываем firstValue после вычислений
-      setOperator(null);   // Сбрасываем оператор после вычислений
+      setFirstValue(null); 
+      setOperator(null);   
       console.log(result)
       return;
     }
